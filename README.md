@@ -1,0 +1,1 @@
+A simple and interactive Mood Based Website built using HTML and CSS that adapts its look and feel based on the user’s mood. The aim of this project is to provide a personalized and relaxing experience by changing the website’s theme, colors, and layout to match how the user feels.
