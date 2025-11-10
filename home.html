@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>MoodApp — Home</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container">
+      <a href="home.html" class="site-logo">
+        <img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" alt="logo">
+        <div>
+          <h5 class="mb-0">MoodApp</h5>
+          <small style="color:var(--muted)">Mood-based music & suggestions</small>
+        </div>
+      </a>
+
+      <div class="top-actions">
+        <a href="home.html" class="btn btn-light me-2"><i class="fa fa-house"></i> Home</a>
+        <a href="diet.html" class="btn btn-accent"><i class="fa fa-apple-whole"></i> Diet</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container-main">
+    <h3>Welcome to MoodApp</h3>
+    <p class="text-muted">Choose a mood below to see playlists, suggestions and diet tips.</p>
+
+    <section class="section">
+      <h5>Moods Overview</h5>
+      <div class="mood-grid">
+        <div class="mood-card happy">
+          <div class="d-flex justify-content-between align-items-start">
+            <div>
+              <h6>Happy</h6>
+              <small class="text-muted">Upbeat & bright</small>
+            </div>
+            <i class="fa-solid fa-face-smile-beam fa-2x"></i>
+          </div>
+          <div class="d-flex justify-content-between align-items-center">
+            <a href="mood.html" class="btn btn-outline-primary btn-sm">Open</a>
+            <a href="playlist.html?mood=happy" class="text-decoration-none"><small>Playlist</small></a>
+          </div>
+        </div>
+
+        <div class="mood-card sad">
+          <div class="d-flex justify-content-between align-items-start">
+            <div><h6>Sad</h6><small class="text-muted">Comfort & calm</small></div>
+            <i class="fa-solid fa-face-sad-tear fa-2x"></i>
+          </div>
+          <div class="d-flex justify-content-between align-items-center">
+            <a href="mood.html" class="btn btn-outline-primary btn-sm">Open</a>
+            <a href="playlist.html?mood=sad" class="text-decoration-none"><small>Playlist</small></a>
+          </div>
+        </div>
+
+        <div class="mood-card relax">
+          <div class="d-flex justify-content-between align-items-start">
+            <div><h6>Relax</h6><small class="text-muted">Chill & unwind</small></div>
+            <i class="fa-solid fa-mug-hot fa-2x"></i>
+          </div>
+          <div class="d-flex justify-content-between align-items-center">
+            <a href="mood.html" class="btn btn-outline-primary btn-sm">Open</a>
+            <a href="playlist.html?mood=relax" class="text-decoration-none"><small>Playlist</small></a>
+          </div>
+        </div>
+
+        <div class="mood-card angry">
+          <div class="d-flex justify-content-between align-items-start">
+            <div><h6>Angry</h6><small class="text-muted">High-energy</small></div>
+            <i class="fa-solid fa-fire fa-2x"></i>
+          </div>
+          <div class="d-flex justify-content-between align-items-center">
+            <a href="mood.html" class="btn btn-outline-primary btn-sm">Open</a>
+            <a href="playlist.html?mood=angry" class="text-decoration-none"><small>Playlist</small></a>
+          </div>
+        </div>
+
+        <div class="mood-card focus">
+          <div class="d-flex justify-content-between align-items-start">
+            <div><h6>Focus</h6><small class="text-muted">Study & work</small></div>
+            <i class="fa-solid fa-brain fa-2x"></i>
+          </div>
+          <div class="d-flex justify-content-between align-items-center">
+            <a href="mood.html" class="btn btn-outline-primary btn-sm">Open</a>
+            <a href="playlist.html?mood=focus" class="text-decoration-none"><small>Playlist</small></a>
+          </div>
+        </div>
+
+        <div class="mood-card romantic">
+          <div class="d-flex justify-content-between align-items-start">
+            <div><h6>Romantic</h6><small class="text-muted">Soft & dreamy</small></div>
+            <i class="fa-solid fa-heart fa-2x"></i>
+          </div>
+          <div class="d-flex justify-content-between align-items-center">
+            <a href="mood.html" class="btn btn-outline-primary btn-sm">Open</a>
+            <a href="playlist.html?mood=romantic" class="text-decoration-none"><small>Playlist</small></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">© 2025 MoodApp</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

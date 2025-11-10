@@ -1,0 +1,134 @@
+:root {
+  --accent: #6f42c1;
+  --muted: #6c757d;
+  --bg: #f8f9fa;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  background: var(--bg);
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  margin: 0;
+  color: #212529;
+  padding-bottom: 70px; /* footer space */
+}
+
+/* Header */
+.header {
+  background: #fff;
+  border-bottom: 1px solid #eee;
+}
+.header .container {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  padding: 16px 18px;
+}
+.site-logo {
+  display:flex;
+  gap:10px;
+  align-items:center;
+  text-decoration:none;
+  color:inherit;
+}
+.site-logo img{ width:44px; height:44px; border-radius:8px; object-fit:cover; }
+
+.top-actions .btn {
+  font-size:1.02rem;
+  padding: .5rem .85rem;
+  border-radius:8px;
+  transition: transform .12s ease, box-shadow .12s ease;
+}
+.top-actions .btn:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(111,66,193,0.12);
+}
+.btn-accent{
+  background: linear-gradient(90deg,#7a4ed6,#5f3db2);
+  color:#fff;
+  border: none;
+}
+
+/* Main container */
+.container-main {
+  max-width: 1150px;
+  margin: 22px auto;
+  padding: 18px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.04);
+}
+
+/* Sections */
+.section { margin-top: 16px; margin-bottom: 18px; }
+
+/* Mood grid/cards */
+.mood-grid {
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+.mood-card {
+  background:#fff;
+  border-radius:12px;
+  padding:14px;
+  min-height:130px;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  box-shadow: 0 6px 18px rgba(22,21,21,0.04);
+  transition: transform .12s ease;
+}
+.mood-card:hover{ transform: translateY(-6px); }
+.mood-card .fa-2x{ font-size:1.6rem; }
+
+/* mood color presets */
+.mood-card.happy{ background: linear-gradient(135deg,#fff6fb,#f3e7ff); }
+.mood-card.sad{ background: linear-gradient(135deg,#f0f8ff,#e6f0ff); }
+.mood-card.relax{ background: linear-gradient(135deg,#f0fff7,#e6fff0); }
+.mood-card.angry{ background: linear-gradient(135deg,#fff5f5,#ffecec); }
+.mood-card.focus{ background: linear-gradient(135deg,#f2f8ff,#e6f0ff); }
+.mood-card.romantic{ background: linear-gradient(135deg,#fffaf0,#fff5e6); }
+
+/* Admin sidebar */
+.admin-sidebar{
+  min-width:220px;
+  max-width:260px;
+  background: #fff;
+  border-radius:12px;
+  padding: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.03);
+}
+.admin-sidebar .nav-link{
+  color:#333;
+  padding:8px 6px;
+  border-radius:8px;
+}
+.admin-sidebar .nav-link:hover{ background:#f7f5ff; color:var(--accent); }
+
+/* List styles */
+.list-compact { padding-left:0; list-style:none; margin:0; }
+.list-compact li { padding:10px 0; border-bottom:1px dashed #f0f0f0; }
+
+/* Footer */
+.site-footer {
+  background:#fff;
+  position:fixed;
+  bottom:0;
+  left:0;
+  right:0;
+  padding:12px;
+  border-top:1px solid #eee;
+  text-align:center;
+  color:var(--muted);
+  font-size:.95rem;
+}
+
+/* Responsive tweaks */
+@media (max-width:900px){
+  .container-main { margin: 12px; padding:14px; }
+  .header .container { padding:12px; flex-direction:column; align-items:stretch; gap:10px; }
+  .admin-sidebar { display:none; } /* hide admin sidebar on narrow screens */
+}

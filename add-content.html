@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Admin — Add Content</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <a href="../home.html" class="site-logo">
+        <img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" alt="logo">
+        <div><h5 class="mb-0">MoodApp Admin</h5><small style="color:var(--muted)">Add Content</small></div>
+      </a>
+      <div class="top-actions">
+        <a href="../home.html" class="btn btn-light me-2"><i class="fa fa-house"></i> Home</a>
+        <a href="../diet.html" class="btn btn-accent"><i class="fa fa-apple-whole"></i> Diet</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="container-main">
+    <div class="row">
+      <div class="col-md-3">
+        <aside class="admin-sidebar">
+          <nav class="nav flex-column">
+            <a class="nav-link" href="admin-home.html">Admin Home</a>
+            <a class="nav-link" href="manage-users.html">Manage Users</a>
+            <a class="nav-link" href="manage-moods.html">Manage Moods</a>
+            <a class="nav-link active" href="add-content.html">Add Content</a>
+            <a class="nav-link" href="reports.html">Reports</a>
+          </nav>
+        </aside>
+      </div>
+
+      <div class="col-md-9">
+        <h4>Add Content</h4>
+        <p class="text-muted">Use this form to add playlists or new moods.</p>
+
+        <form>
+          <div class="mb-3">
+            <label class="form-label">Content Type</label>
+            <select class="form-select">
+              <option>Playlist</option>
+              <option>Mood</option>
+              <option>Article</option>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Title</label>
+            <input class="form-control" placeholder="Title">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Description</label>
+            <textarea class="form-control" rows="4" placeholder="Short description"></textarea>
+          </div>
+
+          <button class="btn btn-primary">Save</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">Admin • © 2025 MoodApp</footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
